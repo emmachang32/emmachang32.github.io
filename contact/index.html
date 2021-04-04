@@ -158,32 +158,6 @@
 </section>
 
 
-<section class="section-sm pb-0">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-lg-8 text-center">
-        <h2 class="mb-4">Hi Write To Me</h2>
-        <form action="#" method="POST" class="row">
-          <div class="col-lg-6">
-            <input type="text" class="form-control mb-4" id="name" name="name" placeholder="Your Name">
-          </div>
-          <div class="col-lg-6">
-            <input type="email" class="form-control mb-4" id="email" name="email" placeholder="Your Email">
-          </div>
-          <div class="col-12">
-            <input type="text" class="form-control mb-4" id="subject" name="subject" placeholder="Subject">
-          </div>
-          <div class="col-12">
-            <textarea name="message" id="message" class="form-control mb-4" placeholder="Your Message"></textarea>
-          </div>
-          <div class="col-12">
-            <button type="submit" class="btn btn-primary">send message</button>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-</section>
 
 
 
@@ -191,6 +165,8 @@
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-12 text-center mb-5">
+        <br>
+        <br>
         <a href="https://emmachang32.github.io"><img src="https://emmachang32.github.io/images/logo.png" alt="Emma Chang | Personal blog "></a>
       </div>
                
@@ -226,6 +202,11 @@
       </div>
       <div class="col-lg-3 col-sm-6 mb-5">
         <h6 class="mb-4">Categories</h6>
+        <ul class="list-unstyled">
+          <li class="mb-3"><a class="text-dark"
+              href="/categories/nccucg">Nccucg</a>
+          </li>
+        </ul>
       </div>
       <div class="col-lg-3 col-sm-6 mb-5">
         <h6 class="mb-4">Quick Links</h6>
@@ -272,45 +253,5 @@
 
 
 
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
-<div id="js-cookie-box" class="cookie-box cookie-box-hide">
-	This site uses cookies. By continuing to use this website, you agree to their use. <span id="js-cookie-button" class="btn btn-sm btn-primary ml-2">I Accept</span>
-</div>
-<script>
-	(function ($) {
-		const cookieBox = document.getElementById('js-cookie-box');
-		const cookieButton = document.getElementById('js-cookie-button');
-		if (!Cookies.get('cookie-box')) {
-			cookieBox.classList.remove('cookie-box-hide');
-			cookieButton.onclick = function () {
-				Cookies.set('cookie-box', true, {
-					expires:  2 
-				});
-				cookieBox.classList.add('cookie-box-hide');
-			};
-		}
-	})(jQuery);
-</script>
-
-
-<style>
-.cookie-box {
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  text-align: center;
-  z-index: 9999;
-  padding: 1rem 2rem;
-  background: rgb(71, 71, 71);
-  transition: all .75s cubic-bezier(.19, 1, .22, 1);
-  color: #fdfdfd;
-}
-
-.cookie-box-hide {
-  display: none;
-}
-</style>
 </body>
 </html>
